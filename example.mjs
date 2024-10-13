@@ -1,5 +1,5 @@
 import OpenAI from "openai";
-const openai = new OpenAI({ apiKey: 'My_OpenAI_API_Key' })
+const openai = new OpenAI({ apiKey: 'My_OpenAI_API_Key' }) // renamed my api key for safety issues, also have used key via user system envirnment PATH
 async function getText() {
 const completion = await openai.chat.completions.create({
     messages: [
